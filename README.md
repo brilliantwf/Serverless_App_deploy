@@ -1,10 +1,9 @@
 
-# Welcome to your CDK Python project!
-# 通过Amazon CDK 在多区域部署 SearxNG并就近访问
+# 通过Amazon CDK 在多区域部署 Serverless app 并就近访问
 
 ## 项目结构
 ```bash
-searxng_deploy/
+Serverless_App_deploy/
 ├── app_docker/ # 部署的docker镜像
 ├── bootstrap.sh # 在区域启用bootstrap
 ├── cdk.json # 配置文件
@@ -12,9 +11,10 @@ searxng_deploy/
 ├── requirements.txt # 依赖
 ├── requirements-dev.txt # 依赖
 ├── README.md # 说明
-└── searxng_deploy
-    ├── searxng_deploy_stack.py # 部署lambda函数和cloudfront+lambda edge
-    └── route53_stack.py # 部署route53
+└── Serverless_App_deploy
+    ├── Cloudfrontstack.py # 部署Cloudfront分配及Lambda@edge
+    └── route53_stack.py # 部署route53 host zone及创建记录
+    └── LambdaApplicationStack.py # 部署Lambda应用并暴露Lambda URL
 ```
 
 ## 环境准备
