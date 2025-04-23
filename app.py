@@ -8,7 +8,7 @@ app = App()
 # 从 CDK context 获取部署配置
 LambdaApplicationStack_regions = app.node.try_get_context('LambdaApplicationStack_regions') or ["us-west-2"]
 edgelambda_region = app.node.try_get_context('edgelambda_region') or "us-east-1"
-# 存储所有创建的 SearxNG stacks，用于后续引用
+# 存储所有创建的 LambdaApplicationStack 用于后续引用
 LambdaApplicationStack_stacks = {}
 
 # 在多个区域部署 LambdaApplicationStack
