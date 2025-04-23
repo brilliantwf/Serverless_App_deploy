@@ -1,0 +1,13 @@
+{
+  "custom_origin": "latency.example.com",
+  "LambdaApplicationStack_regions": [
+    "us-west-2",
+    "us-east-1",
+    "ap-northeast-1"
+  ],
+  "edgelambda_region": "us-east-1",
+  "acknowledged-issue-numbers": [
+    32775,
+    32775
+  ]
+}
