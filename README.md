@@ -32,6 +32,7 @@ npm install -g aws-cdk@latest
 ```
 
 ## 部署流程
+
 0. 根据需要修改配置文件 cdk.context.json
 定义了需要部署的区域，以及需要部署的域名
 1. 在区域启用bootstrap

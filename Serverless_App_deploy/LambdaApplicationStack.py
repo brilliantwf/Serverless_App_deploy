@@ -31,6 +31,7 @@ class LambdaApplicationStack(Stack):
             code=ecr_image,
             handler=aws_lambda.Handler.FROM_IMAGE,
             runtime=aws_lambda.Runtime.FROM_IMAGE,
+            #environment   = {"AWS_LWA_INVOKE_MODE":"RESPONSE_STREAM"},
             function_name=f"LambdaApplication-function-{current_region}",
             memory_size=128,
             reserved_concurrent_executions=10,
